@@ -181,6 +181,21 @@ p {
   filter: brightness(0) saturate(100%) invert(21%) sepia(77%) saturate(7062%) hue-rotate(343deg) brightness(85%) contrast(116%);
 }
 
+.arrowContainer{
+  position: relative;
+}
+
+.popupArrow {
+  width: 0; 
+  height: 0; 
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid var(--clr-dkGrayBlue);
+  position: absolute;
+  top: -30px;
+  left: -10px;
+}
+
 .isHidden {
   display: none;
 }
@@ -241,6 +256,12 @@ p {
   }
 }
 
+@media(min-width: 1225px) and (max-width: 1315px){
+  .socialSection{
+    margin-top: 3rem;
+  }
+}
+
 @media(min-width: 930px) and (max-width: 1302px){
 
   h1{
@@ -278,6 +299,21 @@ p {
   .previewImg{
     border-radius: 0.5rem 0 0 .5rem;
     height: 265px;
+  }
+}
+
+/* adjustment for ultra large screens */
+@media (min-width: 1700px) {
+  .socials_shareActive{
+    position: absolute;
+    border-radius: .5rem;
+    transform: scale(1);
+    max-width: 40%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    left: 700px;
+    top: 220px;
   }
 }
 
